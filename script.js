@@ -11,9 +11,9 @@ function Init() {
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (!re.test(input.value.toLowerCase())) {
-   error.style.display = "block";
+   error.style.display = "block"; //making it visible.
    iconError.style.display = "block";
-   sucess.style.display = "none";
+   sucess.style.display = "none"; // hide it
    input.style.borderColor = "red";
   } else {
    input.style.borderColor = "hsl(0, 36%, 70%)";
